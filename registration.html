@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>User Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h2 align="center">User Registration Form</h2>
+
+<form>
+
+First Name :
+<input type="text" id="fname"><br><br>
+
+Last Name :
+<input type="text" id="lname"><br><br>
+
+Father's Name :
+<input type="text" id="father"><br><br>
+
+Mother's Name :
+<input type="text" id="mother"><br><br>
+
+Date of Birth :
+<input type="date" id="dob"><br><br>
+
+Gender :
+<input type="radio" name="gender" value="Male">Male
+<input type="radio" name="gender" value="Female">Female
+<input type="radio" name="gender" value="Other">Other
+
+<br><br>
+
+<h3>Educational Qualification</h3>
+
+<table border="1">
+
+<tr>
+<th>Qualification</th>
+<th>Board/University</th>
+<th>Year</th>
+<th>Percentage</th>
+</tr>
+
+<tr>
+<td>SSC</td>
+<td><input type="text" id="ssc"></td>
+<td><input type="text" id="sscyear"></td>
+<td><input type="text" id="sscper"></td>
+</tr>
+
+<tr>
+<td>Intermediate</td>
+<td><input type="text" id="inter"></td>
+<td><input type="text" id="interyear"></td>
+<td><input type="text" id="interper"></td>
+</tr>
+
+<tr>
+<td>Graduation</td>
+<td><input type="text" id="degree"></td>
+<td><input type="text" id="degreeyear"></td>
+<td><input type="text" id="degreeper"></td>
+</tr>
+
+</table>
+
+<br>
+
+Upload Photo :
+<input type="file" id="photo"><br><br>
+
+Upload Signature :
+<input type="file" id="sign"><br><br>
+
+<input type="button" value="Submit" onclick="validate()">
+
+<input type="reset" value="Reset">
+
+</form>
+
+<hr>
+
+<h2>Registered Details</h2>
+
+<div id="result"></div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
